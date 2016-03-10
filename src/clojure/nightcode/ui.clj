@@ -61,7 +61,7 @@
   (let [width (-> (.getFontMetrics btn (.getFont btn))
                   (.getStringBounds (.getText btn) (.getGraphics btn))
                   .getWidth
-                  (+ 30))
+                  (+ 70))
         height (-> btn .getPreferredSize .getHeight)]
     (doto btn
       (.setPreferredSize (Dimension. width height)))))
